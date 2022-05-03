@@ -4,6 +4,7 @@
 body {
     font-family: 'DotGothic16', sans-serif;
     background-color: black;
+    
 }
 
 header,
@@ -13,10 +14,12 @@ h3 {
     text-align: center;
     color: rgba(4, 123, 34, 0.37);
     font-weight: bolder;
+   
+    
 
 }
 
-#container {
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -25,6 +28,7 @@ h3 {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
+    
 }
 
 img {
@@ -33,3 +37,48 @@ img {
     height: 200px;
     padding: 20px;
 }
+
+button{
+        background-color: black;
+        border-color:rgba(4, 123, 34, 0.37) ;
+        color:rgba(4, 123, 34, 0.37);
+        padding: 15px 32px;
+        text-align: center;
+        display: flex;
+        font-size: 16px;
+        box-shadow: 0 8px 29px 0 rgba(4, 123, 34, 0.37);
+        border-radius: 10px;
+        font-family: 'DotGothic16', sans-serif;
+      }
+button:hover{
+    background-color:0 8px 29px 0 rgba(4, 123, 34, 0.37); 
+    color: rgb(21, 215, 89);
+}
+/*Pagina gameover*/
+
+
+#resultado{
+  font-size: 60px ;
+  color: rgba(8, 183, 52, 0.37); 
+  text-shadow: 0 0 8px rgba(4, 123, 34, 0.37), 0 0 29px rgba(4, 123, 34, 0.37);
+}
+
+#resultado:hover{
+    background-color:0 8px 29px 0 rgba(4, 123, 34, 0.37); 
+    color: rgb(21, 215, 89);
+}
+
+.luz{
+    color: rgba(8, 183, 52, 0.37); 
+    text-shadow: 0 0 8px rgba(4, 123, 34, 0.37), 0 0 29px rgba(4, 123, 34, 0.37);
+  }
+  
+.luz:hover{
+      background-color:0 8px 29px 0 rgba(4, 123, 34, 0.37); 
+      color: rgb(21, 215, 89);
+  }
+
+.p-30{
+    padding: 30px;
+}
+  
