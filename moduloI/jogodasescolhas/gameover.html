@@ -12,22 +12,38 @@
 <body>
     <header>
         <img src="assets/img/logo.png" width="200" height="200">
-        <h1 id="resultado">Game Over</h1>
+        <h1 class="pisca" id="resultado">Game Over</h1>
 
-        <p class ="luz">Nós existimos dentro de múltiplas realidades paralelas ao mesmo tempo. Uma para cada curso de ação possível que
+        <h2 >Nós existimos dentro de múltiplas realidades paralelas ao mesmo tempo. Uma para cada curso de ação possível
+            que
             poderíamos tomar na vida. O que quer que decidamos fazer nesta existência, há outra em que estamos fazendo o
-            oposto completo.</p>
+            oposto completo.</h2>
 
     </header>
- 
 
-    <nav class ="p-30">
+
+
+    <nav class="p-30">
         <ul>
             <li>
                 <button href="index.html">Voltar ao menu</button>
             </li>
         </ul>
     </nav>
+
+    <script>
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 75 * i);
+
+            });
+
+        }
+        const titulo = document.querySelector('h2');
+        typeWriter(titulo);
+    </script>
 
 </body>
 

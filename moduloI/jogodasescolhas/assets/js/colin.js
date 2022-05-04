@@ -2,12 +2,12 @@ function nextStep() {
     let questao1;
 
     while (questao1 !== 1 && questao1 !== 2) {
-        questao1 = Number(prompt("1: Sim. Sempre sonhei em trabalhar nessa empresa. 2: Não. não vou conseguir dar o meu melhor com o prazo tão curto"));
+        questao1 = Number(prompt("1: Sim. Já estou há um tempo sem participar de jogos inovadores 2: Não. Vou trabalhar em algo só meu"));
 
-        if (questao1 === 1) {
+        if (questao1 === 2) {
             location.href = "../gameover.html";
-        } else if (questao1 === 2) {
-            location.href = "../stephan2.html";
+        } else if (questao1 === 1) {
+            location.href = "../colin2.html";
         } else {
             alert("Resposta invalida! Por favor, utilize um dos numeros indicados.")
         }
@@ -20,12 +20,12 @@ function nextStep2() {
     let questao1;
 
     while (questao1 !== 1 && questao1 !== 2) {
-        questao1 = Number(prompt("1: Sim. Preciso organizar meus pensamentos. 2:Não. Eu tenho muita coisa pra fazer"));
+        questao1 = Number(prompt("1: Sim. Eu sou o senior que eu gostaria de ter encontrado quando Jr. 2:Não. A parte dele é fácil"));
 
         if (questao1 === 2) {
             location.href = "../gameover.html";
         } else if (questao1 === 1) {
-            location.href = "../stephan3.html";
+            location.href = "../colin3.html";
         } else {
             alert("Resposta invalida! Por favor, utilize um dos numeros indicados.")
         }
@@ -39,11 +39,11 @@ function nextStep3() {
     let questao1;
 
     while (questao1 !== 1 && questao1 !== 2) {
-        questao1 = Number(prompt("1: Sim. Peço ajuda, meu tempo está curto. 2: Não. Vou mostrar que eu consigo fazer sozinho"));
+        questao1 = Number(prompt("1: Sim. Não está como eu gostaria 2: Não. Eu já dei todos os feedbacks que eu pude, não vou ser chato"));
 
-        if (questao1 === 2) {
+        if (questao1 === 1) {
             location.href = "../gameover.html";
-        } else if (questao1 === 1) {
+        } else if (questao1 === 2) {
             location.href = "../vitoria.html";
         } else {
             alert("Resposta invalida! Por favor, utilize um dos numeros indicados.")

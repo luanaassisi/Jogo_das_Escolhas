@@ -70,6 +70,7 @@ button {
 button:hover {
     background-color: 0 8px 29px 0 rgba(4, 123, 34, 0.37);
     color: rgb(21, 215, 89);
+    animation: pisca .7s infinite;
 }
 
 /*Pagina gameover*/
@@ -77,25 +78,35 @@ button:hover {
 
 #resultado {
     font-size: 60px;
-    color: rgba(8, 183, 52, 0.37);
+    color: rgb(21, 215, 89);
     text-shadow: 0 0 8px rgba(4, 123, 34, 0.37), 0 0 29px rgba(4, 123, 34, 0.37);
 }
 
 #resultado:hover {
     background-color: 0 8px 29px 0 rgba(4, 123, 34, 0.37);
     color: rgb(21, 215, 89);
+    animation: pisca .7s infinite;
+   
 }
 
 .luz {
     color: rgba(8, 183, 52, 0.37);
     text-shadow: 0 0 8px rgba(4, 123, 34, 0.37), 0 0 29px rgba(4, 123, 34, 0.37);
+    
 }
 
 .luz:hover {
     background-color: 0 8px 29px 0 rgba(4, 123, 34, 0.37);
     color: rgb(21, 215, 89);
+   
 }
+
 
 .p-30 {
     padding: 30px;
+}
+
+.pisca{
+    font-size: 60px;
+    animation: pisca .7s infinite;
 }

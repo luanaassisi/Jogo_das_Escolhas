@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/img/logo.png" width="200" height="200"  >
+    <h1>Stephan:</h1>
+    
+    <h2 class="p-30"> Ufa!! por um momento achei que aceitaria. Gostaram muito do seu jogo então te disponibilizaram um prazo maior. Você está com a cabeça cheia por que não sabe por onde começar. Seu pai te chamou para sair e tomar um café e relaxar um pouco, mas você tem muito o que organizar. Você aceita, Sim ou Não?
+    </h2>
+</header>
+
+    <div class="container">
+        <img src="assets/img/stephan.png">
+    </div>
+
+    <nav class ="p-30">
+        <ul>
+            <li>
+                <button onclick="nextStep2()">Responder</button>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        function typeWriter(elemento){
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML = '';
+       textoArray.forEach((letra, i) => {
+           setTimeout(() => elemento.innerHTML += letra, 75 * i);
+    
+       });
+    
+    }
+    const titulo = document.querySelector('h2');
+    typeWriter(titulo);
+    </script>
+
+    <script  defer src="assets/js/stephan.js"></script>
+
+</body>
+</html>
+
