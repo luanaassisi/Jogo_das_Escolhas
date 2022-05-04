@@ -7,12 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <img src="assets/img/logo.png" width="200" height="200"  >
     <h1 id="resultado">Jogo Das Escolhas</h1>
-    <h1>Tudo é código. Se você ouvir com atenção, poderá ouvir os números. Existe um fluxograma cósmico que dita onde você pode e não pode ir.</h1>
-    <h2>Escolha um personagem:</h2>
+    <h2>Tudo é código. Se você ouvir com atenção, poderá ouvir os números. Existe um fluxograma cósmico que dita onde você pode e não pode ir.               Escolha um personagem:</h2>
     </header>
 
     <div class="container">
@@ -35,5 +35,20 @@
         </a>
     </div>
 </div>
+
+<script>
+    function typeWriter(elemento){
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+   textoArray.forEach((letra, i) => {
+       setTimeout(() => elemento.innerHTML += letra, 75 * i);
+
+   });
+
+}
+const titulo = document.querySelector('h2');
+typeWriter(titulo);
+</script>
+
 </body>
 </html>
