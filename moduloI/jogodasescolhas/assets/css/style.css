@@ -108,5 +108,5 @@ button:hover {
 
 .pisca{
     font-size: 60px;
-    animation: pisca .7s infinite;
+    animation: pisca .5s infinite;
 }

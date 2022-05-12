@@ -7,7 +7,7 @@ function nextStep() {
         if (questao1 === 1) {
             location.href = "../gameover.html";
         } else if (questao1 === 2) {
-            location.href = "../stephan2.html";
+            location.href = "../../../stephan/stephan2.html";
         } else {
             alert("Resposta invalida! Por favor, utilize um dos numeros indicados.")
         }
@@ -25,7 +25,7 @@ function nextStep2() {
         if (questao1 === 2) {
             location.href = "../gameover.html";
         } else if (questao1 === 1) {
-            location.href = "../stephan3.html";
+            location.href = "../../../stephan/stephan3.html";
         } else {
             alert("Resposta invalida! Por favor, utilize um dos numeros indicados.")
         }
